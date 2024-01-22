@@ -1,0 +1,34 @@
+body{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "one two"
+    "three four";
+}
+h2{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-100%);
+    font-size: 10vw;
+}
+div{
+    width: 50vw;
+    height:50vh;
+}
+.one{
+    grid-area: one;
+    background:red;
+}
+.two{
+    grid-area: two;
+    background:blue;
+}
+.three{
+    grid-area: three;
+    background: green;
+}
+.four{
+    grid-area: four;
+    background:yellow;
+}
